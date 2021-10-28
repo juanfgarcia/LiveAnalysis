@@ -1,4 +1,4 @@
-package CFG
+package Analysis
 
 type AExp interface {
     isAExpr()

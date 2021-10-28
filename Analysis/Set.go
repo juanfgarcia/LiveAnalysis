@@ -1,4 +1,4 @@
-package CFG
+package Analysis
 
 type Set map[Variable]bool
 

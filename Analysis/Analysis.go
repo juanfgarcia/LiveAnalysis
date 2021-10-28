@@ -1,14 +1,10 @@
 package Analysis
 
-import (
-    "github.com/juanfgarcia/LiveAnalysis/CFG"
-)
-
-func Analysis(cfg []CFG.Block) ([]Set, []Set) {
-	LVOut := make([]CFG.Set, len(cfg))
-	LVIn := make([]CFG.Set, len(cfg))
-	OLVIn := make([]CFG.Set, len(cfg))
-	OLVOut := make([]CFG.Set, len(cfg))
+func Analysis(cfg []Block) ([]Set, []Set) {
+	LVOut := make([]Set, len(cfg))
+	LVIn := make([]Set, len(cfg))
+	OLVIn := make([]Set, len(cfg))
+	OLVOut := make([]Set, len(cfg))
 
 	for _, n := range cfg {
 		LVOut[n.GetLabel()-1] = Set{}

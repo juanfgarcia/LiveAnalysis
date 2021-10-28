@@ -1,4 +1,4 @@
-package CFG
+package Analysis
 
 import (
 	"fmt"
